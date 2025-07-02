@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @tan566
-- 👀 I’m interested in devlopment of technology
-- 🌱 I’m currently learning multiple coding languages and skills
+- 👋 Hi, I’m tanish kumar
+- 👀 this repository contains the basic projects using HTML, CSS and JS which are only for learning puropse.
+
 
 
 <!---
