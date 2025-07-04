@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: url('https://imgs.search.brave.com/EP0KjrFuA5HmxXs3LvgWrWkabAwvVKFMEjVr17Jbmg4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/Z2xvd2luZy1saWdo/dC1lZmZlY3RzLWNv/bGxlY3Rpb24taXNv/bGF0ZWQtZGFyay1i/YWNrZ3JvdW5kXzI2/MDU1OS0xOTIuanBn/P3NlbXQ9YWlzX2l0/ZW1zX2Jvb3N0ZWQm/dz03NDA') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Container */
+.container {
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 64px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* Game Board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin-bottom: 40px;
+  margin-top: 40px      ;
+  justify-content: center;
+  
+}
+
+/* Each Cell */
+.cell {
+  background-color: #1c7587;
+  color: #ffffff;
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Reset Button */
+.reset-button {
+  background-color: #1c5c64;
+  color: #f5f5f5;
+  border: none;
+  padding: 16px 32px;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* Container styles */
+#winner-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4); /* dim background */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+/* Show state */
+#winner-message.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Message box content */
+#winner-message p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Inner box */
+#winner-message > div {
+  padding: 40px 60px;
+  border-radius: 12px;
+  text-align: center;
+  transform: scale(0.8);
+  transition: transform 0.5s ease;
+}
+
+/* When showing, scale up */
+#winner-message.show > div {
+  transform: scale(1);
+}
+
+/* Button style */
+#winner-message button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#winner-message button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
