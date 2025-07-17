@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+     background-image: url(HD\ wallpaper_\ hourglass\,\ sandglass\,\ life\,\ timepiece\,\ clock\,\ minute\,\ timer.jpeg) ;
+     background-size: 100% 100%;
+     background-attachment: fixed;
+     display: flex;
+   flex-wrap: wrap;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+    font-style: italic;
+    justify-content: center;
+}
+
+.title{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 4% 7% ;
+}
+.StopWatch{
+    color: white;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(65, 64, 64);
+    opacity: 70%;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 20px 20px rgba(27, 27, 27, 0.12);
+    
+}
+.container{
+    width: 30vw;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.control{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 7px;
+}
+
+.control img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    
+}
+
+.control img:nth-child(2){
+    height: 80px;
+    width: 80px;
+}
+
+.timer h1{
+   margin-bottom: 20px;
+}

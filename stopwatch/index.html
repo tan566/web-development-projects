@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1 id="head">StopWatch</h1>
+        <p id="para">lets stop the time</p>
+    </div>
+    <div class="container">
+        <div class="StopWatch">
+        <div class="timer">
+            <h1 id="watchtime">00:00:00</h1>
+        </div>
+        <div class="control">
+            <img id="stop" src="stop.png" alt="stop" onclick="stoptimer()">
+            <img id="start" src="startgold1.png" alt="start" onclick="starttimer()">
+            <img id="reset" src="reset.png" alt="reset" onclick="resettimer()" >
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
